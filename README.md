@@ -29,7 +29,7 @@ O programa deve permitir ao usuário especificar os seguintes requisitos:
 A saída esperada do programa é uma senha que atenda aos critérios definidos pelo usuário.
 
 ## Exemplo 
-![image](https://github.com/IntellectualVision/desafioIV-1/assets/135478150/f0ee07f2-1672-444d-b152-ff7f83a47ae7)
+<img src="https://i.ibb.co/xJB04ZT/Captura-de-tela-2023-09-19-101704.png" alt="Captura-de-tela-2023-09-19-101704" border="0">
 
 ## Estudando e Aprendendo 
 
