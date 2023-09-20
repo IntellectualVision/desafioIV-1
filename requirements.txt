@@ -1,1 +1,6 @@
+As seguintes bibliotecas devem estar instaladas na maquina para o uso devido do programa
 
+- customtkinter
+- random
+- string
+- clipboard
