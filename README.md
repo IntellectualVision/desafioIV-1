@@ -1,20 +1,5 @@
 # Gerador de senhas Python 🐍
 
-## Bem vindos 
-
-Somos um grupo em Recife,formado por
-estudantes, profissionais e entusiastas da
-tecnologia, que busca sempre crescer
-juntos e ajudar uns aos outros a alcançar
-seus objetivos profissionais! Nossa busca é pela mudança, avanço, e
-impacto no perfil profisional e tecnológico
-da cidade do Recife, buscando fazer com
-que tenhamos cada vez mais, um futuro em comunidade para nossa cidade!
-
-ta esperando o que para entrar na nossa comunidade ? 
-
-para saber mais: [clique aqui](https://linktr.ee/comunidadeiv)
-
 ## O Desafio
 
 Neste desafio, você será convidado a criar um programa em Python que seja capaz de gerar senhas aleatórias, seguindo critérios definidos pelo usuário. 
@@ -43,9 +28,6 @@ Ao criar este programa Python para gerar senhas aleatórias com base nos requisi
 
 Em resumo, este desafio proporcionará uma introdução prática a várias habilidades de programação em Python e demonstrará a importância da segurança cibernética ao criar senhas robustas.
 
-## Como enviar o desafio 
-Crie um novo fork e branch com seu nome-sobrenome e faça um pull request quando estiver pronto. Iremos fazer code review.
-
 ## O que você precisa enviar 
 - **“gerador_senhas.py”:**  código principal do programa gerador de senhas. 
 - **“README.md”:** Um arquivo de documentação que explica o objetivo do desafio, como usar o programa e os requisitos. 
@@ -54,10 +36,7 @@ Crie um novo fork e branch com seu nome-sobrenome e faça um pull request quando
 
 ## Dicas 
 1 - Branches com readme e instruções de implantação serão bem vindos.
-2 - O desafio é para todos os níveis de conhecimento, de Estudante a Sênior
-3 - Se você entende de frameworks como Django e Python, construa uma aplicação completa e incremente o seu código
 
-# Live de Code Review
+2 - O desafio é para todos os níveis de conhecimento, de Estudante a Sênior.
 
-O Hylan Silva [@hylansilva](https://www.github.com/hylansilva) irá fazer uma líve na **Quinta feia 21 de Setembro de 2023 ás 19:00**
-na Plataforma da Twitch. 
+3 - Se você entende de frameworks como Django e Python, construa uma aplicação completa e incremente o seu código.
