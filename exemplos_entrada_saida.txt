@@ -1,1 +1,23 @@
+Cenário 1:
 
+Tamanho da senha: 10
+Tipo de Senha: Letras e Numeros
+Resultado: ov8MM9bay3
+
+Cenário 2:
+
+Tamanho da senha: 5
+Tipo de Senha: Letras Numeros e Caracter
+Resultado: er7k.
+
+Cenário 3:
+
+Tamanho da senha: 15
+Tipo de Senha: Apenas Letras
+Resultado: SKheGqbkrdosJRA
+
+Cenário 4:
+
+Tamanho da senha: 7
+Tipo de Senha: Letras e Caracteres
+Resultado: agLI_R!
