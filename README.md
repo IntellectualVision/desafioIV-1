@@ -23,6 +23,7 @@ A saída esperada do programa é uma senha que atenda aos critérios definidos p
 ## 📃 Especificações do Projeto
 
 O projeto usa as Bibliotecas:
+- time
 - string
 - random
 - streamlit

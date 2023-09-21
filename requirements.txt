@@ -1,5 +1,8 @@
 Bibliotecas utilizadas:
 
+- time:
+    + Necessário apenas utilizar: import time
+    + Já está presente em gerador_senhas.py
 - string:
     + Necessário apenas utilizar: import string
     + Já está presente em gerador_senhas.py
