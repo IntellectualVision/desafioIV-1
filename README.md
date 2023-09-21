@@ -32,7 +32,17 @@ Para usar a Gerador de Senhas, siga estas etapas:
 
 1. Crie um codespace:
     * Clique em "Code" e depois na opção "Create a codespace on _lucas-henrique_", onde _lucas-henrique_ é a branch em que se está trabalhando no momento </br>
-    ![Criação do Codespace](images/criar-codespace.png)
+    ![Criar Codespace](images/criar-codespace.png)
+1. Caso não esteja familiarizado com a plataforma e não saiba onde fica o terminal, siga a próxima etapa
+1. Para criar um novo terminal siga os passos:
+  1. Usar atalho:
+    1. Aperte nas teclas ```Ctrl+Shift+´```
+  1. Usar ícones do Codespaces:
+    1. Clique no símbolo de três linhas na barra lateral esquerda
+    1. Clique em "Terminal"
+    1. Clique em "Novo Terminal"
+    1. O passos devem se parecer com:
+      ![Criar Terminal](images/criar-terminal.png)
 1. Configurar permissões do projeto:
       * Use o seguinte comando
         ```shell
@@ -45,6 +55,8 @@ Para usar a Gerador de Senhas, siga estas etapas:
         ./EXECUTEME.sh
         ```
         > O comando acima permitirá testar o Gerador de Senhas Python.
+1. Clique no botão __Abrir no Navegador__ ou use um dos links exibidos no terminal:
+  ![Usar Gerador](images/usar-gerador.png)
 
 ## 📝 Licença
 
