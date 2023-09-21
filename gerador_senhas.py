@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 
 CARACTERES = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -16,7 +16,6 @@ def selecionar_tipo(senha_tipo, conjunto):
     return senha_amostra
 
 
-
 senha_tamanho = int(input("informe o tamanho desejado para sua senha: "))
 
 senha_numerica = input("Incluir números? (S/N): ").strip().upper()
@@ -25,10 +24,11 @@ senha_amostra = selecionar_tipo(senha_numerica, NUMEROS)
 senha_simbolica = input("Incluir símbolos? (S/N): ").strip().upper()
 senha_amostra = selecionar_tipo(senha_simbolica, ESPECIAIS)
 
-
+seed = input("Antes de gerar a senha digite aleatoriamente\npara que a senha seja imprevisível: ")
+random.seed(seed)
 
 for x in range(senha_tamanho):
-    senha += senha_amostra[randint(0, len(senha_amostra) - 1)]
+    senha += senha_amostra[random.randint(0, len(senha_amostra) - 1)]
 
-print(f"Sua senha está pronta: {senha} \n guarde-a em um lugar seguro!")
+print(f"Sua senha está pronta: {senha}")
 
