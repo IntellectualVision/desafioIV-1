@@ -5,6 +5,7 @@
 ## ℹ Tabela de Conteúdos
 - [Desafio](#dart-desafio)
 - [Especificações](#-especificações-do-projeto)
+- [Exemplo](#-exemplo)
 - [Como Usar](#-como-usar-o-gerador-de-senhas)
 
 ## :dart: Desafio
@@ -26,7 +27,11 @@ O projeto usa as Bibliotecas:
 - random
 - streamlit
 
-## ☕ Como uasr o Gerador de Senhas
+## 📝 Exemplo
+
+![Exmplo Desafio](images/exemplo.png)
+
+## ☕ Como usar o Gerador de Senhas
 
 Para usar a Gerador de Senhas, siga estas etapas:
 
@@ -35,14 +40,14 @@ Para usar a Gerador de Senhas, siga estas etapas:
     ![Criar Codespace](images/criar_codespace.png)
 1. Caso não esteja familiarizado com a plataforma e não saiba onde fica o terminal, siga a próxima etapa
 1. Para criar um novo terminal siga os passos:
-  1. Usar atalho:
-    1. Aperte nas teclas ```Ctrl+Shift+´```
-  1. Usar ícones do Codespaces:
-    1. Clique no símbolo de três linhas na barra lateral esquerda
-    1. Clique em "Terminal"
-    1. Clique em "Novo Terminal"
-    1. O passos devem se parecer com:
-      ![Criar Terminal](images/criar_terminal.png)
+   1. Usar atalho:
+      1. Aperte nas teclas ```Ctrl+Shift+´```
+   1. Usar ícones do Codespaces:
+      1. Clique no símbolo de três linhas na barra lateral esquerda
+      1. Clique em "Terminal"
+      1. Clique em "Novo Terminal"
+      1. O passos devem se parecer com:
+         ![Criar Terminal](images/criar_terminal.png)
 1. Configurar permissões do projeto:
       * Use o seguinte comando
         ```shell
@@ -56,7 +61,7 @@ Para usar a Gerador de Senhas, siga estas etapas:
         ```
         > O comando acima permitirá testar o Gerador de Senhas Python.
 1. Clique no botão __Abrir no Navegador__ ou use um dos links exibidos no terminal:
-  ![Usar Gerador](images/usar_gerador.png)
+   ![Usar Gerador](images/usar_gerador.png)
 
 ## 📝 Licença
 
