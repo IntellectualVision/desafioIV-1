@@ -3,7 +3,7 @@ import string
 import random
 import streamlit as st
 
-def estimar_tempo_quebra_senha(tamanho_senha, taxa_tentativas_por_segundo):
+def estimar_tempo_quebra_senha(tamanho_senha, taxa_tentativas_por_segundo, tem_numero, tem_simbolo):
     # A fórmula assume uma tentativa por segundo
     tentativas_por_segundo = taxa_tentativas_por_segundo
     segundos_por_minuto = 60
@@ -11,7 +11,14 @@ def estimar_tempo_quebra_senha(tamanho_senha, taxa_tentativas_por_segundo):
     horas_por_dia = 24
     dias_por_ano = 365
 
-    possibilidades = len(string.ascii_letters) ** tamanho_senha
+    tamanho_caracteres = len(string.ascii_letters)
+
+    if tem_numero:
+        tamanho_caracteres += len(string.digits)
+    if tem_simbolo:
+        tamanho_caracteres += len(string.punctuation)
+
+    possibilidades = tamanho_caracteres ** tamanho_senha
     segundos_para_quebra = possibilidades / tentativas_por_segundo
     minutos_para_quebra = segundos_para_quebra / segundos_por_minuto
     horas_para_quebra = minutos_para_quebra / minutos_por_hora
@@ -57,8 +64,8 @@ if st.button("Gerar Senha"):
 
     # Exibe uma estimativa do tempo para quebrar a senha por força bruta
     tentativas = 1000000
-    tempo_estimado_quebra = estimar_tempo_quebra_senha(comprimento, tentativas)
-    st.write(f"Tempo estimado para quebrar senha de tamanho {comprimento} por força bruta com {tentativas} tentativas/s (letras)\n: {tempo_estimado_quebra} anos")
+    tempo_estimado_quebra = estimar_tempo_quebra_senha(comprimento, tentativas, tem_numero, tem_simbolo)
+    st.write(f"Tempo estimado para quebrar senha de tamanho {comprimento} por força bruta com {tentativas} tentativas/s\n: {tempo_estimado_quebra} anos")
 
     # Exibe o tempo gasto para gerar a senha em milissegundos
     st.write(f"Tempo gasto para gerar a senha: {tempo_gasto_milissegundos:.4f} milissegundos")
