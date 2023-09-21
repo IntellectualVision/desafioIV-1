@@ -5,7 +5,7 @@
 ## ℹ Tabela de Conteúdos
 - [Desafio](#dart-desafio)
 - [Especificações](#-especificações-do-projeto)
-- [Como Usar](#-como-usar-a-dsl-no-codespaces)
+- [Como Usar](#-como-usar-o-gerador-de-senhas)
 
 ## :dart: Desafio
 
@@ -13,9 +13,9 @@ Neste desafio, você será convidado a criar um programa em Python que seja capa
 
 O programa deve permitir ao usuário especificar os seguintes requisitos:
 
-    Comprimento desejado para a senha.
-    Se a senha deve incluir números.
-    Se a senha deve incluir símbolos.
+- Comprimento desejado para a senha.
+- Se a senha deve incluir números.
+- Se a senha deve incluir símbolos.
 
 A saída esperada do programa é uma senha que atenda aos critérios definidos pelo usuário.
 
@@ -26,12 +26,12 @@ O projeto usa as Bibliotecas:
 - random
 - streamlit
 
-## ☕ Como Gerador de Senhas
+## ☕ Como uasr o Gerador de Senhas
 
 Para usar a Gerador de Senhas, siga estas etapas:
 
 1. Crie um codespace:
-    * Clique em "Code" e depois na opção "Create codespace on <branch>", onde <branch> é a branch em que se está trabalhando no momento </br>
+    * Clique em "Code" e depois na opção "Create a codespace on _lucas-henrique_", onde _lucas-henrique_ é a branch em que se está trabalhando no momento </br>
     ![Criação do Codespace](images/criar-codespace.png)
 1. Configurar permissões do projeto:
       * Use o seguinte comando
@@ -39,7 +39,7 @@ Para usar a Gerador de Senhas, siga estas etapas:
         chmod 777 ./EXECUTEME.sh
         ```
         > O comando acima permite o usuário ler, escrever e executar o arquivo EXECUTEME.sh o qual encapsula os comandos necessários para fazer o gerador funcionar.
-   1. Executar o programa:
+1. Executar o programa:
       * Use o seguinte comando
         ```shell
         ./EXECUTEME.sh
@@ -50,4 +50,4 @@ Para usar a Gerador de Senhas, siga estas etapas:
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
 
-[⬆ Voltar ao topo](#gerador-de-senhas-python)<br>
+[⬆ Voltar ao topo](#gerador-de-senhas-python-)<br>
