@@ -44,7 +44,7 @@ Ao criar este programa Python para gerar senhas aleatórias com base nos requisi
 Em resumo, este desafio proporcionará uma introdução prática a várias habilidades de programação em Python e demonstrará a importância da segurança cibernética ao criar senhas robustas.
 
 ## Como enviar o desafio 
-Crie um novo fork e branch com seu nome-sobrenome e faça um pull request quando estiver pronto. Iremos fazer code review.
+Crie um novo fork e branch com seu name-sobrename e faça um pull request quando estiver pronto. Iremos fazer code review.
 
 ## O que você precisa enviar 
 - **“gerador_senhas.py”:**  código principal do programa gerador de senhas. 
