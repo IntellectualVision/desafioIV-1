@@ -1,1 +1,40 @@
+EXEMPLO 1:
 
+informe o tamanho desejado para sua senha: 10
+Incluir números? (S/N): s 
+Incluir símbolos? (S/N): N 
+
+Antes de gerar a senha digite aleatoriamente
+para que a senha seja imprevisível: fnefu88923ndsnfklsn23343fd
+
+Saída:
+
+Sua senha está pronta: UcKXLQw4rf
+
+
+EXEMPLO 2:
+
+informe o tamanho desejado para sua senha: 8
+Incluir números? (S/N): S 
+Incluir símbolos? (S/N): s
+
+Antes de gerar a senha digite aleatoriamente
+para que a senha seja imprevisível: fuh3287 hfun 3ufn234 nfjwenfun 293828inf9
+
+Saída:
+
+Sua senha está pronta: $.\(mJ=1
+
+
+EXEMPLO 3:
+
+informe o tamanho desejado para sua senha: 20
+Incluir números? (S/N): n 
+Incluir símbolos? (S/N): n
+
+Antes de gerar a senha digite aleatoriamente
+para que a senha seja imprevisível: 83r23ufdnew8723hndsnfj
+
+Saída:
+
+Sua senha está pronta: VUMyXMGcdEJPwqPRwbjs
