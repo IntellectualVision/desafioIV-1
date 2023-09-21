@@ -1,8 +1,8 @@
-# Gerador de senhas Python 🐍
+# Proposta de solução ao desafio 1 da [Comunidade IV](https://linktr.ee/comunidadeiv)
 
-### Proposta de solução ao desafio 1 da [Comunidade IV](https://linktr.ee/comunidadeiv)
+## Gerador de senhas Python 🐍
 
-## O Desafio
+### O Desafio
 
 Neste desafio, você será convidado a criar um programa em Python que seja capaz de gerar senhas aleatórias, seguindo critérios definidos pelo usuário. 
 A proposta é oferecer às pessoas uma ferramenta simples e personalizável para criar senhas seguras, visando a proteção de suas contas online e informações pessoais.
