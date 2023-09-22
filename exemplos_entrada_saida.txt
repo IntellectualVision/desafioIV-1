@@ -1,1 +1,1 @@
-
+Instruções de como usar o programa estão descritas no README.md

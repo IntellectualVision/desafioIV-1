@@ -1,24 +1,16 @@
-# Gerador de senhas Python 🐍
+# Gerador de Senhas Python 🐍
 
-## Bem vindos 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-Somos um grupo em Recife,formado por
-estudantes, profissionais e entusiastas da
-tecnologia, que busca sempre crescer
-juntos e ajudar uns aos outros a alcançar
-seus objetivos profissionais! Nossa busca é pela mudança, avanço, e
-impacto no perfil profisional e tecnológico
-da cidade do Recife, buscando fazer com
-que tenhamos cada vez mais, um futuro em comunidade para nossa cidade!
+## ℹ Tabela de Conteúdos
+- [Desafio](#dart-desafio)
+- [Especificações](#-especificações-do-projeto)
+- [Exemplo](#-exemplo)
+- [Como Usar](#-como-usar-o-gerador-de-senhas)
 
-ta esperando o que para entrar na nossa comunidade ? 
+## :dart: Desafio
 
-para saber mais: [clique aqui](https://linktr.ee/comunidadeiv)
-
-## O Desafio
-
-Neste desafio, você será convidado a criar um programa em Python que seja capaz de gerar senhas aleatórias, seguindo critérios definidos pelo usuário. 
-A proposta é oferecer às pessoas uma ferramenta simples e personalizável para criar senhas seguras, visando a proteção de suas contas online e informações pessoais.
+Neste desafio, você será convidado a criar um programa em Python que seja capaz de gerar senhas aleatórias, seguindo critérios definidos pelo usuário. A proposta é oferecer às pessoas uma ferramenta simples e personalizável para criar senhas seguras, visando a proteção de suas contas online e informações pessoais.
 
 O programa deve permitir ao usuário especificar os seguintes requisitos:
 
@@ -28,36 +20,53 @@ O programa deve permitir ao usuário especificar os seguintes requisitos:
 
 A saída esperada do programa é uma senha que atenda aos critérios definidos pelo usuário.
 
-## Exemplo 
-<img src="https://i.ibb.co/xJB04ZT/Captura-de-tela-2023-09-19-101704.png" alt="Captura-de-tela-2023-09-19-101704" border="0">
+## 📃 Especificações do Projeto
 
-## Estudando e Aprendendo 
+O projeto usa as Bibliotecas:
+- sys
+- time
+- string
+- random
+- streamlit
 
-Ao criar este programa Python para gerar senhas aleatórias com base nos requisitos do usuário, a pessoa estará aprendendo os seguintes conceitos e habilidades:
-- **Manipulação de strings em Python:** Aprenderá como criar e manipular strings para formar senhas aleatórias.
-- **Entrada do usuário:** Entenderá como solicitar informações do usuário, como o comprimento desejado da senha, a inclusão de números e símbolos, usando entrada de dados.
-- **Geração de números aleatórios:** Aprenderá a gerar números aleatórios dentro de intervalos específicos para criar senhas variadas.
-- **Lógica condicional:** Praticará o uso de estruturas condicionais para tomar decisões com base nos requisitos do usuário, como a inclusão de números e símbolos na senha.
-- **Conceitos de segurança:** Compreenderá a importância de criar senhas seguras para proteger suas contas e informações pessoais online.
-- **Personalização:** Terá a oportunidade de personalizar as senhas de acordo com suas preferências, aumentando a segurança de suas contas online.
+## 📝 Exemplo
 
-Em resumo, este desafio proporcionará uma introdução prática a várias habilidades de programação em Python e demonstrará a importância da segurança cibernética ao criar senhas robustas.
+![Exmplo Desafio](images/exemplo.png)
 
-## Como enviar o desafio 
-Crie um novo fork e branch com seu nome-sobrenome e faça um pull request quando estiver pronto. Iremos fazer code review.
+## ☕ Como usar o Gerador de Senhas
 
-## O que você precisa enviar 
-- **“gerador_senhas.py”:**  código principal do programa gerador de senhas. 
-- **“README.md”:** Um arquivo de documentação que explica o objetivo do desafio, como usar o programa e os requisitos. 
-- **“exemplos_entrada_saida.txt”:** Um arquivo que contém exemplos de entrada e saída esperada para ajudar os participantes a entender como o programa deve funcionar. 
-- **“requirements.txt”:** Um arquivo que lista quaisquer bibliotecas externas necessárias (por exemplo, se você usar alguma biblioteca específica para geração de senhas). 
+Para usar a Gerador de Senhas, siga estas etapas:
 
-## Dicas 
-1 - Branches com readme e instruções de implantação serão bem vindos.
-2 - O desafio é para todos os níveis de conhecimento, de Estudante a Sênior
-3 - Se você entende de frameworks como Django e Python, construa uma aplicação completa e incremente o seu código
+1. Crie um codespace:
+    * Clique em "Code" e depois na opção "Create a codespace on _lucas-henrique_", onde _lucas-henrique_ é a branch em que se está trabalhando no momento </br>
+    ![Criar Codespace](images/criar_codespace.png)
+1. Caso não esteja familiarizado com a plataforma e não saiba onde fica o terminal, siga a próxima etapa
+1. Para criar um novo terminal siga os passos:
+   1. Usar atalho:
+      1. Aperte nas teclas ```Ctrl+Shift+´```
+   1. Usar ícones do Codespaces:
+      1. Clique no símbolo de três linhas na barra lateral esquerda
+      1. Clique em "Terminal"
+      1. Clique em "Novo Terminal"
+      1. O passos devem se parecer com:
+         ![Criar Terminal](images/criar_terminal.png)
+1. Configurar permissões do projeto:
+      * Use o seguinte comando
+        ```shell
+        chmod 777 ./EXECUTEME.sh
+        ```
+        > O comando acima permite o usuário ler, escrever e executar o arquivo EXECUTEME.sh o qual encapsula os comandos necessários para fazer o gerador funcionar.
+1. Executar o programa:
+      * Use o seguinte comando
+        ```shell
+        ./EXECUTEME.sh
+        ```
+        > O comando acima permitirá testar o Gerador de Senhas Python.
+1. Clique no botão __Abrir no Navegador__ ou use um dos links exibidos no terminal:
+   ![Usar Gerador](images/usar_gerador.png)
 
-# Live de Code Review
+## 📝 Licença
 
-O Hylan Silva [@hylansilva](https://www.github.com/hylansilva) irá fazer uma líve na **Quinta feia 21 de Setembro de 2023 ás 19:00**
-na Plataforma da Twitch. 
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
+
+[⬆ Voltar ao topo](#gerador-de-senhas-python-)<br>
