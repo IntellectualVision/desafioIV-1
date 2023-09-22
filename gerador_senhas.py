@@ -1,3 +1,4 @@
+import sys
 import time
 import string
 import random
@@ -10,6 +11,7 @@ def estimar_tempo_quebra_senha(tamanho_senha, taxa_tentativas_por_segundo, tem_n
     minutos_por_hora = 60
     horas_por_dia = 24
     dias_por_ano = 365
+    overflow = False
 
     tamanho_caracteres = len(string.ascii_letters)
 
@@ -18,14 +20,18 @@ def estimar_tempo_quebra_senha(tamanho_senha, taxa_tentativas_por_segundo, tem_n
     if tem_simbolo:
         tamanho_caracteres += len(string.punctuation)
 
-    possibilidades = tamanho_caracteres ** tamanho_senha
-    segundos_para_quebra = possibilidades / tentativas_por_segundo
-    minutos_para_quebra = segundos_para_quebra / segundos_por_minuto
-    horas_para_quebra = minutos_para_quebra / minutos_por_hora
-    dias_para_quebra = horas_para_quebra / horas_por_dia
-    anos_para_quebra = dias_para_quebra / dias_por_ano
+    try:
+        possibilidades = tamanho_caracteres ** tamanho_senha
+        segundos_para_quebra = possibilidades / tentativas_por_segundo
+        minutos_para_quebra = segundos_para_quebra / segundos_por_minuto
+        horas_para_quebra = minutos_para_quebra / minutos_por_hora
+        dias_para_quebra = horas_para_quebra / horas_por_dia
+        anos_para_quebra = dias_para_quebra / dias_por_ano
+    except OverflowError:
+        overflow = True
+        anos_para_quebra = sys.float_info.max
 
-    return anos_para_quebra
+    return (overflow, anos_para_quebra)
 
 st.title("Gerador de Senhas")
 
@@ -46,11 +52,9 @@ def gerar_senha(comprimento, tem_numero, tem_simbolo):
     if tem_simbolo:
         caracteres += list(string.punctuation)
 
-    senha = ""
-    while len(senha) < comprimento:
-        senha += random.choice(caracteres)
+    senha = random.choices(caracteres, k=comprimento)
     
-    return senha
+    return ''.join(senha)
 
 # Botão para gerar a senha
 if st.button("Gerar Senha"):
@@ -60,12 +64,15 @@ if st.button("Gerar Senha"):
     tempo_gasto_segundos = fim - inicio  # Tempo em segundos
     tempo_gasto_milissegundos = tempo_gasto_segundos * 1000  # Tempo em milissegundos
 
-    st.write(f"Sua senha gerada é: {senha_gerada}")
+    st.write(f"Sua senha gerada é:")
+    st.code(senha_gerada)
 
-    # Exibe uma estimativa do tempo para quebrar a senha por força bruta
     tentativas = 1000000
-    tempo_estimado_quebra = estimar_tempo_quebra_senha(comprimento, tentativas, tem_numero, tem_simbolo)
-    st.write(f"Tempo estimado para quebrar senha de tamanho {comprimento} por força bruta com {tentativas} tentativas/s\n: {tempo_estimado_quebra} anos")
+    (limite_maximo, tempo_estimado_quebra) = estimar_tempo_quebra_senha(comprimento, tentativas, tem_numero, tem_simbolo)
+    
+    # Exibe uma estimativa do tempo para quebrar a senha por força bruta
+    st.write(f"Tempo estimado para quebrar senha de tamanho {comprimento} por força bruta com {tentativas} tentativas/s:")
+    st.code(f"{'Mais que' if limite_maximo else ''} {tempo_estimado_quebra:.2e} {'anos' if tempo_estimado_quebra >= 2 else 'ano'}")
 
     # Exibe o tempo gasto para gerar a senha em milissegundos
     st.write(f"Tempo gasto para gerar a senha: {tempo_gasto_milissegundos:.4f} milissegundos")

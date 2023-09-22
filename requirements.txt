@@ -1,5 +1,8 @@
 Bibliotecas utilizadas:
 
+- sys:
+    + Necessário apenas utilizar: import sys
+    + Já está presente em gerador_senhas.py
 - time:
     + Necessário apenas utilizar: import time
     + Já está presente em gerador_senhas.py
